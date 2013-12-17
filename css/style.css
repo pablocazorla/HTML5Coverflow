@@ -18,54 +18,16 @@ background: -ms-linear-gradient(top,  #212121 1%,#757575 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #212121 1%,#757575 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#757575',GradientType=0 ); /* IE6-9 */
 
-perspective:700px;
-perspective-origin: 50% 60%;
--webkit-perspective:700px; /* Safari and Chrome */
--webkit-perspective-origin: 50% 60%; /* Safari and Chrome */
-
 overflow:hidden;
 
 margin:200px auto;}
 
 .coverflow figure{
-	position:absolute;top:120px;left:500px;
+	position:absolute;bottom:75px;left:500px;
 	width:200px;height: 300px;
 	background:#000;
 	box-shadow: 0 1px 6px rgba(0,0,0,.8);
-	
-	-webkit-transition: all .7s;
-	-moz-transition: all .7s;
-	-ms-transition: all .7s;
-	transition: all .7s;
-	
-	-webkit-transform-origin:50% 50%;
-	-moz-transform-origin:50% 50%;
-	-ms-transform-origin:50% 50%;
-	transform-origin:50% 50%;
-	
-}
-.coverflow figure:after{
-	content:'';
-	position:absolute;bottom:7px;left:-8px;right:-8px;
-	display:block;
-	height: 2px;
-	box-shadow: 0 10px 6px rgba(0,0,0,.8);
-}
-
-
-.coverflow figure.prev{
-	left:330px;
-	-webkit-transform: rotateY(90deg) translateX(70px);
-	-moz-transform: rotateY(90deg) translateX(70px);
-	transform: rotateY(90deg) translateX(70px);	
-}
-
-
-.coverflow figure.next{
-	left:670px;
-	-webkit-transform: rotateY(-90deg) translateX(-70px);
-	-moz-transform: rotateY(-90deg) translateX(-70px);
-	transform: rotateY(-90deg) translateX(-70px);
+	cursor: pointer
 }
 
 .coverflow figure.prev img,
